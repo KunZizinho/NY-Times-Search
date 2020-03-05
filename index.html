@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style/index.css">
+    <title>NY Times Search</title>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron text-center" id="jumbo">
+            <h1> <mat-icon
+                matBadge="number"
+                matBadgePosition="above after"
+                matBadgeColor="accent">
+                    <img src="./icons/news-icon.png">
+            </mat-icon>New York Times Search</h1>
+        </div>
+        <div class="row">
+           <div class="col-lg">
+               <label class="input">
+                   <h6><mat-icon
+                       color="primary"
+                       matBadge="number"
+                       matBadgePosition="above after"
+                       matBadgeColor="accent">
+                           <img src="./icons/62869-newspaper-icon.png">
+                   </mat-icon>Search Parameters</h6>
+                   <form class="parameters">
+                       <label><b>Search Terms:</b></label>
+                       <input class="searchTerms" type="text">
+                       <br>
+                       <label><b>Number of Records to Retrive:</b></label>
+                       <input class="numOfRecords" type="number">
+                       <br>
+                       <label><b>Start Year</b>(Optional)<b>:</b></label>
+                       <input class="startYear" type="date">
+                       <br>
+                       <label><b>End Year</b>(Optional)<b>:</b></label>
+                       <input class="endYear" type="date">
+                       <br>
+                       <br>
+                       <label class="btns">
+                           <button class="search" type="submit">
+                               <mat-icon color="primary" matBadge="number" matBadgePosition="above after"
+                                   matBadgeColor="accent">
+                                   <img style="width: 28px;" src="./icons/XS-Look-icon.png">
+                               </mat-icon><b>Search</b>
+                           </button>
+                           <button class="clear" type="submit">
+                               <mat-icon color="primary" matBadge="number" matBadgePosition="above after"
+                                   matBadgeColor="accent">
+                                   <img style="width: 28px;" src="./icons/trash-icon.png">
+                               </mat-icon><b>Clear Results</b></button>
+                       </label>
+                   </form>
+               </label>
+               <br>
+               <br>
+               <label id="output">
+                   <h6><mat-icon color="primary" matBadge="number" matBadgePosition="above after"
+                           matBadgeColor="accent">
+                           <img src="./icons/62869-newspaper-icon.png">
+                       </mat-icon>Top Articles
+                   </h6>
+                
+               </label>
+               <footer>
+                  
+                   <p><b><i>Work In Progress</i></b></p>
+                   &copy;
+                </footer>
+           </div>
+    </div>
+    <script src="./responsivness/index.js"></script>
+    
+</body>
+</html>
